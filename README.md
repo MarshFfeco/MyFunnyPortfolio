@@ -1,19 +1,4 @@
 # Projeto portfolio
-<style>
-  #imagens {
-    display: flex;
-  }
-
-    #imagens img:nth-child(1) {
-      width: 48%;
-      padding-left: 10px;
-    }
-    #imagens img:nth-child(2) {
-      width: 48%;
-      padding-left: 10px;
-    }
-
-</style>
 
 <p align="center">Projeto My Funny portfolio</p>
 
@@ -41,7 +26,7 @@
 <br>
 
 # Preview
-<div id="imagens">
+<div>
   <img alt="Tela principal" title="Tela de cadastro" src="GitHub\first.png" />
   <img alt="Tela principal" title="Tela de cadastro" src="GitHub\second.png" />
 </div>
