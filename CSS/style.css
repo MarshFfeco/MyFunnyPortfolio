@@ -1,6 +1,7 @@
 :root {
     --pink-color: #E66AB0;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -12,24 +13,29 @@ a {
     font-size: 31px;
 }
 
+section {
+    height: 93vh;
+}
+
 #navigation {
     max-width: 100%;
-    min-height: 89px;
+    min-height: 7vh;
     display: flex;
     flex-wrap: nowrap;
     flex-flow: row;
     align-items: center;
-    justify-content: space-around;
-
 }
     #navigation ul {
         list-style: none;
+        flex: 1.5;
+        padding-left: 100px;
+        
     }
     #navigation ul:nth-child(2) {
         display: inherit;
-        width: 30%;
-        justify-content: space-between;
-
+        flex: 1;
+        justify-content: space-around;
+        padding-left: 0;
     }
     #navigation a {
        position: relative;
@@ -54,11 +60,42 @@ a {
         left: 0;
     }
 
+main {
+    display: flex;
+    flex-direction: row;
+}
 
-    @media (max-width: 1000px) {
-
-        #navigation ul:nth-child(2) {
-            width: 40%;
+    #left {
+        flex: 1.5;
+        background-color: #E6D981;
+    }
+        #left p {
+            text-align: right;
+            font-size: 250px;
+            color: #3F9199;
         }
 
+    #right {
+        flex: 1;
+        background-color: #3F9199;
     }
+
+        #ball {
+            width: 100px;
+            height: 100px;
+            border-radius: 360px;
+            background-color: #E6D981;
+            margin: 20px 20px;
+        }
+
+
+@media (max-width: 1000px) {
+    a {
+        font-size: 25px;
+    }
+/*
+    #navigation ul:nth-child(2) {
+        width: 40%;
+    }
+*/
+}
